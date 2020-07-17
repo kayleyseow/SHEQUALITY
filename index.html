@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SHEQUALITY</title>
+    <link
+      rel="apple-touch-icon"
+      href="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Foutput-onlinepngtools%20(3).png?v=1594870759533"
+    />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Foutput-onlinepngtools%20(3).png?v=1594870759533"
+    />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/homestyle.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <!-- Header-->
+
+  <!--Navigation Bar-->
+  <body>
+    <nav>
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="volunteerabroad.html">Volunteer Abroad</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Resources & Media
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="videos.html">Videos</a>
+            <a href="articles.html">Articles</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+    <!--First Parallax-->
+    <div class="parallax1"></div>
+    <!--Title and logo-->
+    <div>
+      <h1><span class="highlight">SHEQUALITY</span></h1>
+      <img
+        src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Foutput-onlinepngtools%20(3).png?v=1594870759533"
+        alt="logo"
+        class="center"
+      />
+    </div>
+    <section>
+      <div>
+        <h3>
+          Our goal is to give women in developing countries the same opportunity
+          as men in every aspect of life.
+        </h3>
+        <h2>
+          By giving women equal rights in developing countries, we create a more
+          accepting environment for children to grow up in. We also create
+          stronger countries both politically and economically.
+        </h2>
+      </div>
+    </section>
+
+    <div class="lightboxclass">
+      <!-- Images used to open the lightbox -->
+      <div class="row">
+        <div class="column">
+          <img
+            src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Fequal%20Cropped%20(1).png?v=1594943747289"
+            onclick="openModal();currentSlide(1)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Fboard%20Cropped.jpg?v=1594944027727"
+            onclick="openModal();currentSlide(2)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Ffinger%20Cropped.jpg?v=1594944158199"
+            onclick="openModal();currentSlide(3)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Fhomework%20Cropped.jpg?v=1594944698977"
+            onclick="openModal();currentSlide(4)"
+            class="hover-shadow"
+          />
+        </div>
+      </div>
+
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img
+              src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Fequal.png?v=1594859707652"
+              style="width:100%"
+            />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img
+              src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Fboard.jpg?v=1594861530101"
+              style="width:100%"
+            />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img
+              src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Ffinger.jpg?v=1594861528269"
+              style="width:100%"
+            />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img
+              src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Fhomework.jpg?v=1594944673480"
+              style="width:100%"
+            />
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <img
+              class="demo"
+              src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Fequal%20Cropped%20(1).png?v=1594943747289"
+              onclick="currentSlide(1)"
+              alt="So, are we equal?"
+            />
+          </div>
+
+          <div class="column">
+            <img
+              class="demo"
+              src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Fboard%20Cropped.jpg?v=1594944027727"
+              onclick="currentSlide(2)"
+              alt="Girl holding up a board."
+            />
+          </div>
+
+          <div class="column">
+            <img
+              class="demo"
+              src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Ffinger%20Cropped.jpg?v=1594944158199"
+              onclick="currentSlide(3)"
+              alt="Girls raising up their hand."
+            />
+          </div>
+
+          <div class="column">
+            <img
+              class="demo"
+              src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Fhomework%20Cropped.jpg?v=1594944698977"
+              onclick="currentSlide(4)"
+              alt="Girls doing their homework."
+            />
+          </div>
+        </div>
+      </div>
+      <p3>.</p3>
+      <script>
+        // Open the Modal
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+      </script>
+    </div>
+    <div class="parallax2"></div>
+    <section>
+      <h1><span class="highlight">LEARN MORE</span></h1>
+      <a class="btn" href="https://shequality.glitch.me/volunteerabroad.html"
+        >Volunteer With Us</a
+      >
+      <a class="btn" href="https://shequality.glitch.me/videos.html"
+        >Watch Some Videos</a
+      >
+      <a class="btn" href="https://shequality.glitch.me/articles.html"
+        >Read an Article</a
+      >
+      <a class="btn" href="https://shequality.glitch.me/about.html"
+        >About the Cause</a
+      >
+    </section>
+    <div class="parallax3"></div>
+    <h1><span class="highlight">TAKE ACTION</span></h1>
+    <p4>
+      <ol>
+        Step 1: Share a message of openness and equality with your family
+      </ol>
+      <ol>
+        Step 2: Donate
+      </ol>
+      <ol>
+        Step 3: Take action in your own community
+      </ol>
+      <ol>
+        Step 4: Join our cause abroad on a humanitarian trip
+      </ol>
+      <br />
+    </p4>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </body>
+  <footer>
+    <img
+      src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Foutput-onlinepngtools%20(4).png?v=1594870922092"
+      style="width:15%"
+    />
+    <p>
+      <span class="highlight">Made by Kiana Fong and Kayley Seow</span><br />
+    </p>
+  </footer>
+</html>

@@ -1,0 +1,360 @@
+/* CSS files add styling rules to your content */
+
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
+  font-family: "Manrope", sans-serif !important;
+  /*   background-color: #F2F3F4; */
+  /*   height: 100%; */
+  margin: 0px;
+}
+
+.highlight {
+  background-color: #1c3041;
+}
+p3 {
+  color: white;
+  font-size: 3em;
+}
+
+p4 {
+  font-size: 2.3em;
+  font-style: italic;
+  color: #C1f7dc;
+  text-shadow: 0 0 3px black;
+}
+
+.parallax1 {
+  background-image: url(https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Fposter.jpg?v=1594865449882);
+  min-height: 115%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /*Important*/
+  position: absolute;
+  z-index: -1;
+
+  font-size: 500%;
+  /*   bottom: 50%; */
+  width: 100%;
+  letter-spacing: 20px;
+}
+
+.parallax2 {
+  background-image: url(https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Fstudynew.jpg?v=1594944586629);
+  min-height: 140%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /*Important*/
+  position: absolute;
+  z-index: -1;
+  padding-side: 2em;
+
+  font-size: 500%;
+  width: 100%;
+  letter-spacing: 20px;
+}
+
+.parallax3 {
+  background-image: url(https://assets.change.org/photos/0/ny/lu/EQnYLuFoAHweEtJ-800x450-noPad.jpg?1491238721);
+  min-height: 120%;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed; /*Important*/
+  position: absolute;
+  z-index: -1;
+  padding-side: 2em;
+
+  font-size: 500%;
+  width: 100%;
+  letter-spacing: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+h1 {
+  text-align: center;
+  color: #C1f7dc;
+  font-size: 12vw;
+}
+h2 {
+  text-align: center;
+  color: black;
+  background: #C1f7dc;
+  font-size: 2vw;
+}
+h3 {
+  text-align: center;
+  font-size: 4vw;
+  color: black;
+  background: #C1f7dc;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: Arial;
+  navbar-align: right;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #FB3640;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F2F2F2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #FAA1A4;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+section {
+  overflow: auto;
+  padding: 80px 80px;
+}
+
+/*Back to top button styling*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #FB3650; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #F2BB05; /* Add an orange background on hover */
+}
+
+.lightboxclass {
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  justify-content: space-around;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 22%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn {
+  margin: 10px;
+}
+
+.btn {
+  background-color: #108690;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 2.3vw;
+}
+
+.btn:hover {
+  background-color: #2f3180;
+  color: white;
+}
+
+.indexbuttons {
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2bb05;
+  color: white;
+  text-align: center;
+  font-size: 1.5vw;
+  color: #c1f7dc;
+}

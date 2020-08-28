@@ -3,8 +3,8 @@
 **Take a look at Twitter's [@womeng](https://twitter.com/womeng) feature of our project: https://twitter.com/womeng/status/1296530932577570821**  
 Check out our project here: https://kayleyseow.github.io/SHEQUALITY/  
 Check out our code here: https://github.com/kayleyseow/SHEQUALITY    
-<img src=SHEQUALITYTwitterfeature.png alt="SHEQUALITY LOGO" width=50%/>
 <img src="https://cdn.glitch.com/9358b7d4-1332-4e69-bee5-c76ab151e1b0%2Foutput-onlinepngtools%20(4).png" alt="SHEQUALITY LOGO" width=40%/>
+<img src=SHEQUALITYTwitterfeature.png alt="SHEQUALITY LOGO" width=50%/>
 # About Our Project  
 **Our goal is to give women in developing countries the same opportunity as men in every aspect of life.**  
 
